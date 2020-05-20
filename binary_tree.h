@@ -1,4 +1,9 @@
 //SOLUTION
+/*
+ *File:binary_tree.h
+ *Description:declares binary_tree class along with the Node class
+ *Email:miguelp6479@student.vvc.edu
+*/
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H
 
@@ -70,6 +75,11 @@ public:
        @return the right child of the root
     */
     Binary_tree right() const;
+    
+    /**
+       set the data left and right
+    */
+    Binary_tree set(string data, Binary_tree left, Binary_tree right);
 
 private:
     /**

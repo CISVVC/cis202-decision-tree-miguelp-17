@@ -1,4 +1,8 @@
 //SOLUTION
+/*File:binary_tree.cpp
+ *Description:this file applies the binary_tree class
+ *Email:miguelp6479@student.vvc.edu
+*/
 #include <algorithm>
 #include "binary_tree.h"
 
@@ -65,6 +69,11 @@ Binary_tree Binary_tree::right() const
     result.root = root->right;
     return result;
 }
-
+Binary_tree Binary_tree::set(string data, Binary_tree left, Binary_tree right)
+{
+    root->data = data;
+    root->left = left.root;
+    root->right = right.root;
+}
 
 
